@@ -1,7 +1,8 @@
 import pickle
 import numpy as np
 import streamlit as st
-
+import os
+print(os.getcwd())
 
 def load_model(modelfile):
     loaded_model = pickle.load(open(modelfile, 'rb'))
